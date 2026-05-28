@@ -1,15 +1,16 @@
+```ts
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore, doc, getDocFromServer } from 'firebase/firestore';
 import { OperationType, FirestoreErrorInfo } from '../types';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCo_G5Vo7OkUsK-tUXVQKCkeTn_IHw9vB0",
-  authDomain: "elite-rummy-circle.firebaseapp.com",
-  projectId: "elite-rummy-circle",
-  storageBucket: "elite-rummy-circle.firebasestorage.app",
-  messagingSenderId: "762468709641",
-  appId: "1:762468709641:web:b4e193ed1670e5d13ccfd8"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
@@ -48,3 +49,4 @@ async function testConnection() {
   }
 }
 testConnection();
+```

@@ -7,7 +7,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 
-<title>Elite Rummy Circle - v94.0</title>
+<title>Elite Rummy Circle - v99.0</title>
 <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/lgtvmct-wq/rummy_saga/main/favicon.png">
 <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/lgtvmct-wq/rummy_saga/main/favicon.png">
 <link rel="apple-touch-icon" sizes="152x152" href="https://raw.githubusercontent.com/lgtvmct-wq/rummy_saga/main/favicon.png">
@@ -273,31 +273,10 @@
     </div>
 
     <div style="margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-        <span onclick="showReleaseNotes()" style="font-size: 11px; opacity: 0.6; cursor: pointer; text-decoration: underline; color: var(--accent); font-weight: bold;">v94.0</span>
+        <span onclick="showReleaseNotes()" style="font-size: 11px; opacity: 0.6; cursor: pointer; text-decoration: underline; color: var(--accent); font-weight: bold;">v99.0</span>
         <div style="font-size: 10px; opacity: 0.4; margin-top: 4px;">Developer: Elite IT</div>
     </div>
   </div>
-</div>
-
-<div id="newGameModeSelectionModal" class="modal-overlay" style="display:-none;">
-    <div class="modal-card" style="max-width:400px; padding:25px; background:#1b252f; border:1px solid rgba(255,255,255,0.15); border-radius:16px; font-family:'Inter', sans-serif; text-align: left;">
-        <h2 style="color:#27ae60; font-size:20px; font-weight:800; text-transform:uppercase; letter-spacing:1px; margin-top:0; margin-bottom:8px; text-align: center;">Choose Game Mode</h2>
-        <p style="font-size:12px; color:#aaa; margin-bottom:20px; line-height:1.4; text-align: center;">Select the format of the rummy game you wish to configure.</p>
-        
-        <div style="display:flex; flex-direction:column; gap:12px;">
-            <button onclick="selectNewGameSetupType('regular')" style="background:linear-gradient(135deg, #27ae60, #1e8449); border:1px solid rgba(255,255,255,0.2); border-radius:10px; color:#fff; padding:15px; text-align:left; display:flex; flex-direction:column; gap:4px; box-shadow:0 4px 10px rgba(39,174,96,0.15); transition: 0.2s; width: 100%; cursor: pointer;">
-                <span style="font-weight:900; font-size:14px; text-transform:uppercase; letter-spacing:0.5px;">Regular Game</span>
-                <span style="font-size:11px; font-weight:normal; opacity:0.8; line-height:1.3;">Select standard Elite rules or define Custom exit scores and re-entries.</span>
-            </button>
-            
-            <button onclick="selectNewGameSetupType('tournament')" style="background:linear-gradient(135deg, #8e44ad, #6c3483); border:1px solid #a569bd; border-radius:10px; color:#fff; padding:15px; text-align:left; display:flex; flex-direction:column; gap:4px; box-shadow:0 4px 12px rgba(142,68,173,0.25); transition: 0.2s; width: 100%; cursor: pointer;">
-                <span style="font-weight:900; font-size:14px; text-transform:uppercase; letter-spacing:0.5px;">Tournament Game</span>
-                <span style="font-size:11px; font-weight:normal; opacity:0.8; line-height:1.3;">Championship Match Configuration with mandatory seat cut.</span>
-            </button>
-        </div>
-        
-        <button class="navBtn" style="background:rgba(255,255,255,0.05); color:#ccc; margin-top:15px; height:40px; font-size:12px; font-weight:bold; width:100%; text-align:center; border:1px solid rgba(255,255,255,0.1); border-radius:8px; display: block; cursor: pointer;" onclick="closeNewGameModeSelection()">Cancel</button>
-    </div>
 </div>
 
 <div id="reentryModal" class="modal-overlay">
@@ -371,6 +350,41 @@
     <div class="modal-card" style="text-align: left; max-width: 400px;">
          <h2 style="color:var(--accent); border-bottom: 1px solid var(--glass-border); padding-bottom: 10px; margin-top:0;">Release Notes</h2>
          <div style="margin-bottom: 20px;">
+             <b style="color: var(--warning); display: block; margin-bottom: 5px;">v99.0 - Expandable Info Drawers & Elite Brand Cohesion</b>
+              <div style="font-size: 11px; line-height: 1.4; opacity: 0.9;">
+                  • <b>Interactive Info Dropdown:</b> Designed a collapsible ⓘ panel for Championship configurations to conserve real estate on setups.<br>
+                  • <b>Purple Brand Alignment:</b> Styled the tournament dashboard consistently with the Elite panel, showcasing full violet/purple highlights on active controls.<br>
+              </div>
+              <hr style="margin: 10px 0; opacity: 0.2;">
+             <b style="color: var(--warning); display: block; margin-bottom: 5px;">v98.0 - Dynamic Ruleset Initialization & Responsive Form Controls</b>
+              <div style="font-size: 11px; line-height: 1.4; opacity: 0.9;">
+                  • <b>Unified Tournament Setup:</b> Perfectly matched the Tournament mode's look and feel with the Elite setup panel, standardizing input structures and typography.<br>
+                  • <b>Screen Stability Controls:</b> Fully disabled screen jumps and page sliding on player additions for a more stable user configuration experience.<br>
+                  • <b>Responsive Seeding Layout:</b> Completely removed default empty select boxes on load to keep screens clean across all game types.<br>
+              </div>
+              <hr style="margin: 10px 0; opacity: 0.2;">
+             <b style="color: var(--warning); display: block; margin-bottom: 5px;">v97.0 - Interactive Inline Seat Cut & Optimized Setup Alerts</b>
+              <div style="font-size: 11px; line-height: 1.4; opacity: 0.9;">
+                  • <b>Inline Card Keypads:</b> Display the rank selection keys directly inline under each player card container on suit press instead of at the modal footer, eliminating unnecessary scrolling drag on all devices.<br>
+                  • <b>Minimized Tie Warning Alerts:</b> Streamlined Seat Cut duplicate warning popups into a clean statement: <i>"Duplicate values, repeating Seat cut"</i>.<br>
+              </div>
+              <hr style="margin: 10px 0; opacity: 0.2;">
+             <b style="color: var(--warning); display: block; margin-bottom: 5px;">v96.0 - Start Buttons Refinement & Player Selection Filtering</b>
+              <div style="font-size: 11px; line-height: 1.4; opacity: 0.9;">
+                  • <b>Cleaner Action Aesthetics:</b> Removed checkered flags ("🏁") from all start-game actions across all game setup menus.<br>
+                  • <b>Interactive Regular Setup Button:</b> Configured the regular/custom game start triggers to distinctly label the action as <i>Start Game (System Seat Cut)</i> for enhanced transparency.<br>
+                  • <b>High Contrast Tournament Controls:</b> Upgraded the Add Player label text color to pure white in tournament mode to maximize readability on deep-grape backdrops.<br>
+                  • <b>Player Sync & Filter:</b> Excluded retired players from the setup and re-join selection dropdowns to perfectly match the current active Hall of Fame roster.<br>
+              </div>
+              <hr style="margin: 10px 0; opacity: 0.2;">
+              <b style="color: var(--warning); display: block; margin-bottom: 5px;">v95.0 - Unified Arena Configuration & Mobile Card Layout</b>
+             <div style="font-size: 11px; line-height: 1.4; opacity: 0.9;">
+                 • <b>Unified Setup Flow:</b> Removed initial mode selection screen. Standard Elite, Custom, and Tournament options are selectable directly on the setup panel.<br>
+                 • <b>Vertical Mobile Seat Cut:</b> Placed card suit selectors completely under the player name vertically to maximize touch targets and prevent side-scroll overflows.<br>
+                 • <b>Automated Arena Scrolling:</b> Adding player inputs during tournament setup now automatically scrolls the viewport up smoothly to improve rapid player registration.<br>
+                 • <b>Playing Card Joker:</b> Replaced basic textual indicators with a high-definition playing card Joker emoji icon for true visual clarity.<br>
+             </div>
+             <hr style="margin: 10px 0; opacity: 0.2;">
              <b style="color: var(--warning); display: block; margin-bottom: 5px;">v94.0 - Upgraded Seat Cut & Multi-Deck Alignment Protocol</b>
              <div style="font-size: 11px; line-height: 1.4; opacity: 0.9;">
                  • <b>Enlarged Touch Screen Suit Targets:</b> Drastic scale increase of suit symbols and value selectors to optimize tactical finger navigation.<br>
@@ -660,18 +674,7 @@
                 Select a card for each player to determine seeding ranks, dealer assignment, and distribution order. Duplicate cards are automatically prevented.
             </p>
 
-            <div style="background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.05); border-radius:8px; overflow:hidden; margin-bottom:15px;">
-                <table style="width:100%; border-collapse:collapse; margin-top:0;">
-                    <thead>
-                        <tr style="background:rgba(0,0,0,0.4);">
-                            <th style="padding:10px; font-size:10px; color:#aaa; border-bottom:1px solid rgba(255,255,255,0.1); text-align:left;">Player</th>
-                            <th style="padding:10px; font-size:10px; color:#aaa; border-bottom:1px solid rgba(255,255,255,0.1); text-align:center;">Card Selector</th>
-                            <th style="padding:10px; font-size:10px; color:#aaa; border-bottom:1px solid rgba(255,255,255,0.1); text-align:right;">Selected Card</th>
-                        </tr>
-                    </thead>
-                    <tbody id="seatCutPlayersTableBody">
-                    </tbody>
-                </table>
+            <div id="seatCutPlayersContainer" style="display:flex; flex-direction:column; gap:12px; margin-bottom:15px;">
             </div>
 
             <div id="seatCutKeypad" style="display:none; background:rgba(0,0,0,0.4); border:1px solid rgba(255,255,255,0.1); padding:10px; border-radius:10px; margin-bottom:15px; animation:fadeIn 0.2s;">
@@ -718,7 +721,7 @@
 
             <div style="display:flex; gap:10px; border-top:1px solid rgba(255,255,255,0.05); padding-top:15px;">
                 <button class="actionBtn" style="background:#555; width:120px; height:40px; font-size:13px; margin:0; padding:0;" onclick="goBackToSeatCutEntry()">← Modify</button>
-                <button class="actionBtn" style="background:linear-gradient(to right, #27ae60, #2ecc71); flex:1; height:40px; font-size:13px; margin:0; padding:0;" onclick="applySeatCutAndStartGame()">Apply & Start Game 🏁</button>
+                <button class="actionBtn" style="background:linear-gradient(to right, #27ae60, #2ecc71); flex:1; height:40px; font-size:13px; margin:0; padding:0;" onclick="applySeatCutAndStartGame()">Apply & Start Game</button>
             </div>
         </div>
     </div>
@@ -746,7 +749,7 @@
       <div class="tv-close" id="tvCloseBtn" onclick="closeFullScreen()">Close</div>
   </div>
   <div style="position: fixed; bottom: 8px; left: 12px; z-index: 4000; text-align: left; pointer-events: auto;">
-      <div onclick="showReleaseNotes()" style="font-size: 10px; opacity: 0.6; color: var(--accent); cursor: pointer; text-decoration: underline; font-weight: bold; background: rgba(0,0,0,0.4); padding: 2px 6px; border-radius: 4px;">v94.0</div>
+      <div onclick="showReleaseNotes()" style="font-size: 10px; opacity: 0.6; color: var(--accent); cursor: pointer; text-decoration: underline; font-weight: bold; background: rgba(0,0,0,0.4); padding: 2px 6px; border-radius: 4px;">v99.0</div>
       <div style="font-size: 9px; opacity: 0.4; margin-top: 4px;">Developer: Elite IT</div>
   </div>
 </div>
@@ -778,6 +781,24 @@ const auth = firebase.auth();
 
 let playersDb =[], savedGames =[], state = null, currentScreen = '';
 let isPromptingReEntry = false;
+
+// Mode selection tracking
+let selectedPlayersByMode = {
+    standard: [],
+    custom: [],
+    tournament: []
+};
+let gameNameByMode = {
+    standard: "",
+    custom: "",
+    tournament: ""
+};
+let adminByMode = {
+    standard: "",
+    custom: "",
+    tournament: ""
+};
+let currentRulesetModeObj = 'standard';
 
 function getExitLimitFor(g) {
     const target = g || state;
@@ -1103,53 +1124,9 @@ function loadData() {
 let previousScreen = 'continue';
 let newGameSetupType = 'regular'; // 'regular' or 'tournament'
 
-function clickNewGame() {
-    openNewGameModeSelectionModal();
-}
-
-function openNewGameModeSelectionModal() {
-    document.getElementById('newGameModeSelectionModal').style.display = 'flex';
-}
-
-function closeNewGameModeSelection() {
-    document.getElementById('newGameModeSelectionModal').style.display = 'none';
-    const backTo = previousScreen || 'continue';
-    currentScreen = backTo;
-    window.location.hash = backTo;
-    document.querySelectorAll('.navBtn').forEach(b => b.classList.remove('active-nav'));
-    const btnId = 'nav' + backTo.charAt(0).toUpperCase() + backTo.slice(1);
-    const btn = document.getElementById(btnId);
-    if(btn) btn.classList.add('active-nav');
-    
-    if(backTo==='players') renderPlayers();
-    if(backTo==='stats') renderStats();
-    if(backTo==='continue') renderContinue();
-    if(backTo==='history') renderHistory();
-    if(backTo==='reports') renderReports();
-    if(backTo==='activeGame') renderActive();
-}
-
-function selectNewGameSetupType(type) {
-    newGameSetupType = type;
-    document.getElementById('newGameModeSelectionModal').style.display = 'none';
-    
-    currentScreen = 'newGame';
-    window.location.hash = 'newGame';
-    document.querySelectorAll('.navBtn').forEach(b => b.classList.remove('active-nav'));
-    const btn = document.getElementById('navNewGame');
-    if(btn) btn.classList.add('active-nav');
-    
-    renderNewGame();
-}
-
 function showScreen(s) {
   if (s !== 'newGame' && s !== 'activeGame') {
       previousScreen = s;
-  }
-  
-  if (s === 'newGame') {
-      openNewGameModeSelectionModal();
-      return;
   }
 
   currentScreen = s;
@@ -1172,35 +1149,42 @@ function showScreen(s) {
   if(s==='history') renderHistory();
   if(s==='reports') renderReports();
   if(s==='activeGame') renderActive();
+  if(s==='newGame') renderNewGame();
 }
 
 // --- VIEWS ---
 function setRulesetMode(mode) {
+    newGameSetupType = mode === 'tournament' ? 'tournament' : 'regular';
+    
+    const hIcon = document.getElementById('newGameHeaderIcon');
+    const hTitle = document.getElementById('newGameHeaderTitle');
+    const hSub = document.getElementById('newGameHeaderSub');
+    const cardEl = document.getElementById('newGameCard');
+    const btnAddP = document.getElementById('btnAddPlayer');
+    const btnStart = document.getElementById('btnStartGame');
+    const adminWrapper = document.getElementById('adminSelectionWrapper');
+    const adminLabel = document.getElementById('adminSelectionLabel');
+    const adminSelect = document.getElementById('gameAdminSelect');
+    const adminText = document.getElementById('adminSelectionText');
+    const dtBtn = document.getElementById('btnInsertDateTime');
+    
     const stdBtn = document.getElementById('ruleStandardBtn');
     const custBtn = document.getElementById('ruleCustomBtn');
     const tourneyBtn = document.getElementById('ruleTourneyBtn');
     const customBlock = document.getElementById('customRulesBlock');
     const tourneyBlock = document.getElementById('tourneyBlock');
-    
-    // Deselect and clear
-    if (stdBtn) {
-        stdBtn.style.background = 'rgba(255,255,255,0.08)';
-        stdBtn.style.border = 'none';
-        stdBtn.style.color = 'white';
-        stdBtn.classList.remove('active-rule');
-    }
-    if (custBtn) {
-        custBtn.style.background = 'rgba(255,255,255,0.08)';
-        custBtn.style.border = 'none';
-        custBtn.style.color = 'white';
-        custBtn.classList.remove('active-rule');
-    }
-    if (tourneyBtn) {
-        tourneyBtn.style.background = 'rgba(255,255,255,0.08)';
-        tourneyBtn.style.border = 'none';
-        tourneyBtn.style.color = 'white';
-        tourneyBtn.classList.remove('active-rule');
-    }
+
+    // Reset button designs to unselected styles
+    const buttons = [stdBtn, custBtn, tourneyBtn];
+    buttons.forEach(btn => {
+        if (btn) {
+            btn.style.background = 'rgba(255,255,255,0.08)';
+            btn.style.border = 'none';
+            btn.style.color = 'white';
+            btn.classList.remove('active-rule');
+        }
+    });
+
     if (customBlock) customBlock.style.display = 'none';
     if (tourneyBlock) tourneyBlock.style.display = 'none';
 
@@ -1209,127 +1193,376 @@ function setRulesetMode(mode) {
             stdBtn.style.background = 'var(--accent)';
             stdBtn.classList.add('active-rule');
         }
-        const startBtn = document.getElementById('btnStartGame');
-        if (startBtn) startBtn.style.background = 'var(--accent)';
+        
+        if (hIcon) hIcon.textContent = '🟢';
+        if (hTitle) {
+            hTitle.style.color = '#27ae60';
+            hTitle.textContent = 'Regular Setup';
+        }
+        if (hSub) {
+            hSub.style.color = '#58d68d';
+            hSub.textContent = 'Standard / Custom Game Configuration';
+        }
+        
+        if (cardEl) {
+            cardEl.style.background = 'rgba(255,255,255,0.05)';
+            cardEl.style.border = 'none';
+            cardEl.style.boxShadow = 'none';
+        }
+        
+        if (dtBtn) {
+            dtBtn.style.background = 'var(--warning)';
+            dtBtn.style.borderColor = 'transparent';
+            dtBtn.style.color = '#111';
+        }
+        
+        if (btnAddP) {
+            btnAddP.style.background = 'rgba(255,255,255,0.1)';
+            btnAddP.style.border = '1px dashed var(--glass-border)';
+            btnAddP.style.color = 'white';
+            btnAddP.style.fontSize = '12px';
+            btnAddP.style.padding = '10px';
+        }
+        
+        if (adminWrapper) adminWrapper.style.borderColor = 'rgba(255,255,255,0.1)';
+        if (adminLabel) adminLabel.style.color = 'var(--accent)';
+        if (adminSelect) adminSelect.style.borderColor = 'var(--glass-border)';
+        if (adminText) {
+            adminText.style.color = '';
+            adminText.style.opacity = '0.5';
+        }
+
+        if (btnStart) {
+            btnStart.style.background = 'var(--accent)';
+            btnStart.style.border = 'none';
+            btnStart.style.boxShadow = 'none';
+            btnStart.textContent = 'Start Game (System Seat Cut)';
+        }
+
     } else if (mode === 'custom') {
         if (custBtn) {
-            custBtn.style.background = '#e67e22';
+            custBtn.style.background = '#8a3c00';
             custBtn.classList.add('active-rule');
         }
         if (customBlock) customBlock.style.display = 'block';
-        const startBtn = document.getElementById('btnStartGame');
-        if (startBtn) startBtn.style.background = '#e67e22';
+
+        if (hIcon) hIcon.textContent = '🟢';
+        if (hTitle) {
+            hTitle.style.color = '#27ae60';
+            hTitle.textContent = 'Regular Setup';
+        }
+        if (hSub) {
+            hSub.style.color = '#58d68d';
+            hSub.textContent = 'Standard / Custom Game Configuration';
+        }
+        
+        if (cardEl) {
+            cardEl.style.background = 'rgba(255,255,255,0.05)';
+            cardEl.style.border = 'none';
+            cardEl.style.boxShadow = 'none';
+        }
+        
+        if (dtBtn) {
+            dtBtn.style.background = 'var(--warning)';
+            dtBtn.style.borderColor = 'transparent';
+            dtBtn.style.color = '#111';
+        }
+        
+        if (btnAddP) {
+            btnAddP.style.background = 'rgba(255,255,255,0.1)';
+            btnAddP.style.border = '1px dashed var(--glass-border)';
+            btnAddP.style.color = 'white';
+            btnAddP.style.fontSize = '12px';
+            btnAddP.style.padding = '10px';
+        }
+        
+        if (adminWrapper) adminWrapper.style.borderColor = 'rgba(255,255,255,0.1)';
+        if (adminLabel) adminLabel.style.color = 'var(--accent)';
+        if (adminSelect) adminSelect.style.borderColor = 'var(--glass-border)';
+        if (adminText) {
+            adminText.style.color = '';
+            adminText.style.opacity = '0.5';
+        }
+
+        if (btnStart) {
+            btnStart.style.background = '#e67e22';
+            btnStart.style.border = 'none';
+            btnStart.style.boxShadow = 'none';
+            btnStart.textContent = 'Start Game (System Seat Cut)';
+        }
+
     } else if (mode === 'tournament') {
         if (tourneyBtn) {
             tourneyBtn.style.background = '#8e44ad';
             tourneyBtn.classList.add('active-rule');
         }
         if (tourneyBlock) tourneyBlock.style.display = 'block';
-        const startBtn = document.getElementById('btnStartGame');
-        if (startBtn) startBtn.style.background = '#8e44ad';
+
+        if (hIcon) hIcon.textContent = '🏆';
+        if (hTitle) {
+            hTitle.style.color = '#a569bd';
+            hTitle.textContent = 'Tournament Setup';
+        }
+        if (hSub) {
+            hSub.style.color = '#c59bf6';
+            hSub.textContent = 'Championship Arena';
+        }
+        
+        if (cardEl) {
+            cardEl.style.background = 'rgba(255,255,255,0.05)';
+            cardEl.style.border = 'none';
+            cardEl.style.boxShadow = 'none';
+        }
+        
+        if (dtBtn) {
+            dtBtn.style.background = 'var(--warning)';
+            dtBtn.style.borderColor = 'transparent';
+            dtBtn.style.color = '#111';
+        }
+        
+        if (btnAddP) {
+            btnAddP.style.background = 'rgba(142,68,173,0.1)';
+            btnAddP.style.border = '1px dashed rgba(165,105,189,0.5)';
+            btnAddP.style.color = '#e0bdfa';
+            btnAddP.style.fontSize = '12px';
+            btnAddP.style.padding = '10px';
+        }
+        
+        if (adminWrapper) adminWrapper.style.borderColor = 'rgba(142,68,173,0.3)';
+        if (adminLabel) adminLabel.style.color = '#a569bd';
+        if (adminSelect) adminSelect.style.borderColor = 'rgba(142,68,173,0.5)';
+        if (adminText) {
+            adminText.style.color = '#c59bf6';
+            adminText.style.opacity = '0.6';
+        }
+
+        if (btnStart) {
+            btnStart.style.background = 'linear-gradient(135deg, #111111, #8e44ad)';
+            btnStart.style.border = '1.5px solid #a569bd';
+            btnStart.style.boxShadow = '0 4px 15px rgba(142,68,173,0.3)';
+            btnStart.textContent = 'Start Game (System Seat Cut)';
+        }
     }
 }
 
+function switchRulesetMode(mode) {
+    saveCurrentPlayersForMode();
+    setRulesetMode(mode);
+    restorePlayersForMode(mode);
+}
+
+function toggleTourneyInfo() {
+    const details = document.getElementById('tourneyInfoDetails');
+    const chevron = document.getElementById('tourneyInfoChevron');
+    if (details) {
+        if (details.style.display === 'none') {
+            details.style.display = 'block';
+            if (chevron) chevron.style.transform = 'rotate(180deg)';
+        } else {
+            details.style.display = 'none';
+            if (chevron) chevron.style.transform = 'rotate(0deg)';
+        }
+    }
+}
+
+function saveCurrentPlayersForMode() {
+    const selects = Array.from(document.querySelectorAll('#playerList select'));
+    const pList = selects.map(s => s.value);
+    selectedPlayersByMode[currentRulesetModeObj] = pList;
+    
+    const gNameVal = document.getElementById('gName')?.value || '';
+    gameNameByMode[currentRulesetModeObj] = gNameVal;
+    
+    const adminVal = document.getElementById('gameAdminSelect')?.value || '';
+    adminByMode[currentRulesetModeObj] = adminVal;
+}
+
+function restorePlayersForMode(mode) {
+    currentRulesetModeObj = mode;
+    
+    // restore game name
+    const gNameInput = document.getElementById('gName');
+    if (gNameInput) {
+        gNameInput.value = gameNameByMode[mode] || '';
+    }
+    
+    // restore player fields
+    const playerListDiv = document.getElementById('playerList');
+    if (playerListDiv) {
+        playerListDiv.innerHTML = '';
+        const savedList = selectedPlayersByMode[mode] || [];
+        const listToRestore = savedList;
+        
+        listToRestore.forEach(val => {
+            addPlayerFieldWithVal(val, listToRestore);
+        });
+    }
+    
+    refreshPlayerDropdownOptions();
+    updateAdminSelect();
+    
+    // restore admin value if valid and in selection
+    const adminSelect = document.getElementById('gameAdminSelect');
+    if (adminSelect && adminByMode[mode]) {
+        adminSelect.value = adminByMode[mode];
+    }
+    
+    validateNewGameFields();
+}
+
+function addPlayerFieldWithVal(val = "", allSelected = null) {
+  const selected = allSelected || Array.from(document.querySelectorAll('#playerList select')).map(s => s.value);
+  let opts = `<option value="">-- Select Player --</option>` + 
+    playersDb.filter(p => !isExcludedPlayer(p.fullName)).map(p => {
+        if(selected.includes(p.fullName) && p.fullName !== val) return '';
+        const name = p.fullName || `Elite-User-${p.id.substring(0,5)}`;
+        const selectedAttr = (name === val) ? 'selected' : '';
+        return `<option value="${name}" ${selectedAttr}>${name} ${p.isOnline?'':'(OFFLINE)'}</option>`;
+    }).join('');
+    
+  const div = document.createElement('div');
+  div.style="display:flex; gap:10px; margin-bottom:10px;";
+  div.innerHTML = `<select class="std-input" style="margin-bottom:0; flex:1;" onchange="onPlayerDropdownChange();">${opts}</select><button onclick="this.parentElement.remove(); onPlayerDropdownChange();" style="background:var(--danger); width:50px;">✕</button>`;
+  document.getElementById('playerList').appendChild(div);
+}
+
+function onPlayerDropdownChange() {
+    refreshPlayerDropdownOptions();
+    updateAdminSelect();
+    validateNewGameFields();
+}
+
+function refreshPlayerDropdownOptions() {
+    const selects = Array.from(document.querySelectorAll('#playerList select'));
+    const selectedValues = selects.map(s => s.value);
+    
+    selects.forEach((selectEl, idx) => {
+        const curVal = selectEl.value;
+        let html = `<option value="">-- Select Player --</option>`;
+        playersDb.filter(p => !isExcludedPlayer(p.fullName)).forEach(p => {
+            const name = p.fullName;
+            const isSelectedElsewhere = selectedValues.some((val, sIdx) => sIdx !== idx && val === name);
+            if (!isSelectedElsewhere) {
+                const selAttr = (name === curVal) ? 'selected' : '';
+                html += `<option value="${name}" ${selAttr}>${name} ${p.isOnline?'':'(OFFLINE)'}</option>`;
+            }
+        });
+        selectEl.innerHTML = html;
+        selectEl.value = curVal;
+    });
+}
+
 function renderNewGame() {
-  if (newGameSetupType === 'tournament') {
-    document.getElementById('mainPane').innerHTML = `
-      <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px; font-family:'Inter', sans-serif;">
-          <span style="font-size:28px;">🏆</span>
-          <div style="display:flex; flex-direction:column;">
-              <h2 style="color:#a569bd; font-family:'Inter', sans-serif; font-weight:900; text-transform:uppercase; letter-spacing:1px; margin:0; line-height:1.2;">Tournament Setup</h2>
-              <span style="font-size:11px; color:#c59bf6; font-weight:bold; text-transform:uppercase; letter-spacing:0.5px;">Championship Arena Initialization</span>
-          </div>
-      </div>
-      <div style="background:linear-gradient(135deg, rgba(142,68,173,0.1), rgba(108,52,131,0.15)); border:2.5px solid #8e44ad; box-shadow:0 6px 25px rgba(110, 52, 131, 0.4); padding:20px; border-radius:15px; font-family:'Inter', sans-serif;">
-          <input id="gName" class="std-input" placeholder="Enter Game Name" style="border-color: rgba(142,68,173,0.5); font-weight:700;">
-          <button onclick="appendDT()" style="background:#8e44ad; border:1px solid #a569bd; width:100%; color:#fff; margin-bottom:15px; font-weight:800; cursor:pointer;">🕒 Insert Date/Time</button>
-          
-          <div style="margin-bottom: 20px; border-top: 1px solid rgba(142,68,173,0.3); padding-top: 15px;">
-              <label style="display:block; font-size:11px; font-weight:900; color:#a569bd; text-transform:uppercase; margin-bottom:8px; letter-spacing:1px;">Active Protocol</label>
-              <div style="background:#5b2c80; border: 1.5px solid #a569bd; color: white; font-size: 13px; font-weight: 900; text-transform: uppercase; padding: 12px; border-radius: 8px; text-align: center; letter-spacing: 1px; box-shadow: 0 0 10px rgba(142,68,173,0.3);">
-                  🏆 TOURNAMENT RULES LOCKED
-              </div>
-              
-              <div id="tourneyBlock" style="background:rgba(142,68,173,0.18); border:1.5px dashed rgba(165,105,189,0.5); padding:14px; border-radius:8px; margin-top:12px; font-size:11.5px; color:#e0bdfa; line-height:1.5; text-align:left;">
-                  <strong style="color:#f1c40f; font-size:13px; display:block; margin-bottom:6px; font-weight:900; text-transform:uppercase;">🏁 CHAMPIONSHIP MODE PROTOCOL</strong>
-                  <p style="margin:4px 0;">• Mandatory Seat Cut to automate seating order, dealer, and clockwise distribution sequences.</p>
-                  <p style="margin:4px 0;">• Strictly <strong style="color:#ff6b6b; font-weight:900;">NO RE-ENTRY</strong>. Standard cutoff is &gt;240.</p>
-              </div>
-          </div>
-  
-          <div id="playerList"></div>
-          <button class="navBtn" style="background:rgba(142,68,173,0.08); width:100%; border:1px dashed #a569bd; margin-bottom:15px; color:#c59bf6;" onclick="addPlayerField()">+ Add Player</button>
-          
-          <div id="adminSelectionWrapper" style="display:none; margin-bottom: 20px; border-top: 1px solid rgba(142,68,173,0.3); padding-top: 15px;">
-              <label style="display:block; font-size:11px; font-weight:900; color:#a569bd; text-transform:uppercase; margin-bottom:8px; letter-spacing:1px;">Authorize Game Admin</label>
-              <select id="gameAdminSelect" class="std-input" style="margin-bottom:0; border-color: rgba(142,68,173,0.5);"></select>
-              <div style="font-size:10px; opacity:0.6; color:#c59bf6; margin-top:6px; line-height:1.3;">The Admin has the sole authority to rename games and correct scores for ended rounds.</div>
-          </div>
-  
-          <button id="btnStartGame" class="actionBtn" style="background:linear-gradient(135deg, #8e44ad, #6c3483); border:1.5px solid #a569bd; color:white; font-size:16px; font-weight:900; letter-spacing:0.5px; box-shadow:0 4px 15px rgba(142,68,173,0.5); text-transform:uppercase; cursor: pointer;" onclick="startGame()">Start Game (with Seat Cut) 🏁</button>
-      </div>`;
-  } else {
-    document.getElementById('mainPane').innerHTML = `
-      <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px; font-family:'Inter', sans-serif;">
-          <span style="font-size:28px;">🟢</span>
-          <div style="display:flex; flex-direction:column;">
-              <h2 style="color:#27ae60; font-family:'Inter', sans-serif; font-weight:900; text-transform:uppercase; letter-spacing:1px; margin:0; line-height:1.2;">Regular Setup</h2>
-              <span style="font-size:11px; color:#58d68d; font-weight:bold; text-transform:uppercase; letter-spacing:0.5px;">Standard / Custom Game Configuration</span>
-          </div>
-      </div>
-      <div style="background:rgba(255,255,255,0.05); padding:15px; border-radius:12px;">
-          <input id="gName" class="std-input" placeholder="Enter Game Name">
-          <button onclick="appendDT()" style="background:var(--warning); width:100%; color:#111; margin-bottom:15px;">🕒 Insert Date/Time</button>
-          
-          <div style="margin-bottom: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-              <label style="display:block; font-size:12px; font-weight:bold; color:var(--accent); text-transform:uppercase; margin-bottom:8px; letter-spacing:0.5px;">Ruleset Selection</label>
-              <div style="display:flex; gap:10px; margin-bottom:10px;">
-                  <button id="ruleStandardBtn" class="active-rule" onclick="setRulesetMode('standard')" style="flex:1; background:var(--accent); color:white; font-size:12px; font-weight:bold; height:38px; border:none; border-radius:6px; cursor:pointer; padding:0 4px; transition: all 0.2s;">Elite</button>
-                  <button id="ruleCustomBtn" onclick="setRulesetMode('custom')" style="flex:1; background:#8a3c00; color:white; font-size:12px; font-weight:bold; height:38px; border:none; border-radius:6px; cursor:pointer; padding:0 4px; transition: all 0.2s;">Custom Rules</button>
-              </div>
-              
-              <div id="customRulesBlock" style="display:none; background:rgba(255,255,255,0.03); padding:12px; border-radius:8px; border:1px solid var(--glass-border); margin-top:10px;">
-                  <div style="margin-bottom: 12px;">
-                      <label style="display:block; font-size:11px; margin-bottom:5px; opacity:0.8; font-weight:600;">Exit Score (Total score that will exit a player):</label>
-                      <input id="exitScoreInput" type="text" inputmode="numeric" pattern="[0-9]*" class="std-input" value="0" style="margin-bottom:0; height:36px; padding:0 10px; font-size:13px;" onfocus="if(this.value==='0')this.value='';" onblur="if(this.value.trim()==='')this.value='0';">
-                  </div>
-                  <div>
-                      <label style="display:block; font-size:11px; margin-bottom:5px; opacity:0.8; font-weight:600;">Number of Re-entries allowed:</label>
-                      <input id="maxReentriesInput" type="text" inputmode="numeric" pattern="[0-9]*" class="std-input" value="0" style="margin-bottom:0; height:36px; padding:0 10px; font-size:13px;" onfocus="if(this.value==='0')this.value='';" onblur="if(this.value.trim()==='')this.value='0';">
-                  </div>
-              </div>
-          </div>
-  
-          <div id="playerList"></div>
-          <button class="navBtn" style="background:rgba(255,255,255,0.1); width:100%; border:1px dashed var(--glass-border); margin-bottom:15px;" onclick="addPlayerField()">+ Add Player</button>
-          
-          <div id="adminSelectionWrapper" style="display:none; margin-bottom: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
-              <label style="display:block; font-size:12px; font-weight:bold; color:var(--accent); text-transform:uppercase; margin-bottom:8px; letter-spacing:0.5px;">Authorize Game Admin</label>
-              <select id="gameAdminSelect" class="std-input" style="margin-bottom:0;"></select>
-              <div style="font-size:10px; opacity:0.5; margin-top:4px;">The Admin has the sole authority to rename games and correct scores for ended rounds.</div>
-          </div>
-  
-          <button id="btnStartGame" class="actionBtn" style="cursor: pointer;" onclick="startGame()">Start Game 🏁</button>
-      </div>`;
-  }
-  updateAdminSelect();
+  document.getElementById('mainPane').innerHTML = `
+    <div id="newGameHeader" style="display:flex; align-items:center; gap:12px; margin-bottom:20px; font-family:'Inter', sans-serif;">
+        <span id="newGameHeaderIcon" style="font-size:28px;">🟢</span>
+        <div style="display:flex; flex-direction:column;">
+            <h2 id="newGameHeaderTitle" style="color:#27ae60; font-family:'Inter', sans-serif; font-weight:900; text-transform:uppercase; letter-spacing:1px; margin:0; line-height:1.2;">Regular Setup</h2>
+            <span id="newGameHeaderSub" style="font-size:11px; color:#58d68d; font-weight:bold; text-transform:uppercase; letter-spacing:0.5px;">Standard / Custom Game Configuration</span>
+        </div>
+    </div>
+    <div id="newGameCard" style="padding:20px; border-radius:15px; font-family:'Inter', sans-serif; transition: all 0.3s ease;">
+        <input id="gName" class="std-input" placeholder="Enter Game Name" oninput="validateNewGameFields()">
+        <button id="btnInsertDateTime" onclick="appendDT(); validateNewGameFields();" style="width:100%; margin-bottom:15px; font-weight:800; cursor:pointer; height:38px; border:none; border-radius:6px;">🕒 Insert Date/Time</button>
+        
+        <div style="margin-bottom: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+            <label style="display:block; font-size:12px; font-weight:bold; color:var(--accent); text-transform:uppercase; margin-bottom:8px; letter-spacing:0.5px;">Ruleset Selection</label>
+            <div style="display:flex; gap:10px; margin-bottom:10px;">
+                <button id="ruleStandardBtn" class="active-rule" onclick="switchRulesetMode('standard');" style="flex:1; font-size:12px; font-weight:bold; height:38px; border-radius:6px; cursor:pointer; padding:0 4px; transition: all 0.2s;">Elite</button>
+                <button id="ruleCustomBtn" onclick="switchRulesetMode('custom');" style="flex:1; font-size:12px; font-weight:bold; height:38px; border-radius:6px; cursor:pointer; padding:0 4px; transition: all 0.2s;">Custom Rules</button>
+                <button id="ruleTourneyBtn" onclick="switchRulesetMode('tournament');" style="flex:1; font-size:12px; font-weight:bold; height:38px; border-radius:6px; cursor:pointer; padding:0 4px; transition: all 0.2s;">Tournament</button>
+            </div>
+            
+            <div id="tourneyBlock" style="display:none; margin-top:12px; font-family:'Inter', sans-serif;">
+                <div onclick="toggleTourneyInfo()" style="display:flex; align-items:center; gap:8px; background:rgba(142,68,173,0.15); border:1px solid rgba(165,105,189,0.3); padding:8px 12px; border-radius:8px; cursor:pointer;" title="Click to view info">
+                    <span style="font-size:14px; color:#a569bd;">ℹ️</span>
+                    <span style="font-size:11px; color:#c59bf6; font-weight:bold; flex:1;">Championship Match Config (Tap to expand)</span>
+                    <span id="tourneyInfoChevron" style="font-size:10px; color:#a569bd; transition: transform 0.2s; display:inline-block;">▼</span>
+                </div>
+                <div id="tourneyInfoDetails" style="display:none; background:rgba(142,68,173,0.08); border:1px solid rgba(165,105,189,0.15); border-top:none; border-bottom-left-radius:8px; border-bottom-right-radius:8px; padding:10px 12px; font-size:11px; color:#e0bdfa; line-height:1.4;">
+                    <p style="margin: 0 0 6px 0;">ℹ️ <strong>Mandatory Seat Cut</strong> to automate seating order, dealer, and clockwise distribution sequences.</p>
+                    <p style="margin: 0;">🚫 <strong>Strictly NO RE-ENTRY</strong>. Standard cutoff is &gt;240.</p>
+                </div>
+            </div>
+
+            <div id="customRulesBlock" style="display:none; background:rgba(255,255,255,0.03); padding:12px; border-radius:8px; border:1px solid var(--glass-border); margin-top:10px;">
+                <div style="margin-bottom: 12px;">
+                    <label style="display:block; font-size:11px; margin-bottom:5px; opacity:0.8; font-weight:600;">Exit Score (Total score that will exit a player):</label>
+                    <input id="exitScoreInput" type="text" inputmode="numeric" pattern="[0-9]*" class="std-input" value="0" style="margin-bottom:0; height:36px; padding:0 10px; font-size:13px;" oninput="validateNewGameFields()" onfocus="if(this.value==='0')this.value='';" onblur="if(this.value.trim()==='')this.value='0';">
+                </div>
+                <div>
+                    <label style="display:block; font-size:11px; margin-bottom:5px; opacity:0.8; font-weight:600;">Number of Re-entries allowed:</label>
+                    <input id="maxReentriesInput" type="text" inputmode="numeric" pattern="[0-9]*" class="std-input" value="0" style="margin-bottom:0; height:36px; padding:0 10px; font-size:13px;" oninput="validateNewGameFields()" onfocus="if(this.value==='0')this.value='';" onblur="if(this.value.trim()==='')this.value='0';">
+                </div>
+            </div>
+        </div>
+
+        <div id="playerList"></div>
+        <button id="btnAddPlayer" class="navBtn" style="margin-bottom:15px; cursor:pointer; width:100%; border-radius:8px;" onclick="addPlayerField()">+ Add Player</button>
+        
+        <div id="adminSelectionWrapper" style="display:none; margin-bottom: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+            <label id="adminSelectionLabel" style="display:block; font-size:12px; font-weight:bold; color:var(--accent); text-transform:uppercase; margin-bottom:8px; letter-spacing:0.5px;">Authorize Game Admin</label>
+            <select id="gameAdminSelect" class="std-input" style="margin-bottom:0;" onchange="validateNewGameFields()"></select>
+            <div id="adminSelectionText" style="font-size:10px; opacity:0.5; margin-top:4px;">The Admin has the sole authority to rename games and correct scores for ended rounds.</div>
+        </div>
+
+        <button id="btnStartGame" class="actionBtn" style="cursor: pointer;" onclick="startGame()">Start Game (System Seat Cut)</button>
+    </div>`;
+
+  const initialMode = newGameSetupType === 'tournament' ? 'tournament' : 'standard';
+  setRulesetMode(initialMode);
+  restorePlayersForMode(initialMode);
 }
 
 function appendDT() { document.getElementById('gName').value += " " + formatEliteDate(new Date()); }
 
 function addPlayerField() {
-  const selected = Array.from(document.querySelectorAll('#playerList select')).map(s => s.value);
-  let opts = `<option value="">-- Select Player --</option>` + 
-    playersDb.map(p => {
-        if(selected.includes(p.fullName)) return '';
-        const name = p.fullName || `Elite-User-${p.id.substring(0,5)}`;
-        return `<option value="${name}">${name} ${p.isOnline?'':'(OFFLINE)'}</option>`;
-    }).join('');
-  const div = document.createElement('div');
-  div.style="display:flex; gap:10px; margin-bottom:10px;";
-  div.innerHTML = `<select class="std-input" style="margin-bottom:0; flex:1;" onchange="updateAdminSelect()">${opts}</select><button onclick="this.parentElement.remove(); updateAdminSelect();" style="background:var(--danger); width:50px;">✕</button>`;
-  document.getElementById('playerList').appendChild(div);
-  updateAdminSelect();
+  addPlayerFieldWithVal("");
+  onPlayerDropdownChange();
+}
+
+function validateNewGameFields() {
+    const btn = document.getElementById('btnStartGame');
+    if (!btn) return;
+    
+    const selects = Array.from(document.querySelectorAll('#playerList select'));
+    const pList = selects.map(s => s.value).filter(v => v !== "");
+    const hasEnoughPlayers = pList.length >= 2;
+    const adminSelect = document.getElementById('gameAdminSelect');
+    
+    const isWrapperVisible = document.getElementById('adminSelectionWrapper')?.style.display !== 'none';
+    const isAdminOk = isWrapperVisible ? (adminSelect && adminSelect.value !== "") : false;
+    
+    let isValid = hasEnoughPlayers && isAdminOk;
+    
+    const currentMode = newGameSetupType === 'tournament' ? 'tournament' : (document.getElementById('ruleCustomBtn')?.classList.contains('active-rule') ? 'custom' : 'standard');
+    if (currentMode === 'custom') {
+        const exitScoreStr = document.getElementById('exitScoreInput')?.value || '';
+        const maxReentriesStr = document.getElementById('maxReentriesInput')?.value || '';
+        const exitScore = parseInt(exitScoreStr);
+        const maxReentries = parseInt(maxReentriesStr);
+        if (isNaN(exitScore) || exitScore <= 0 || isNaN(maxReentries) || maxReentries < 0) {
+            isValid = false;
+        }
+    }
+    
+    if (isValid) {
+        btn.disabled = false;
+        btn.style.opacity = '1';
+        btn.style.pointerEvents = 'auto';
+        btn.style.cursor = 'pointer';
+    } else {
+        btn.disabled = true;
+        btn.style.opacity = '0.4';
+        btn.style.pointerEvents = 'none';
+        btn.style.cursor = 'not-allowed';
+    }
+}
+
+function isExcludedPlayer(fullName) {
+    if (!fullName) return true;
+    const nameUpper = fullName.trim().toUpperCase();
+    return nameUpper === 'GANESH' || nameUpper === 'GANESH KUMAR';
 }
 
 function formatEliteDate(dateObj) {
@@ -1388,11 +1621,12 @@ function closeSeatCutModal() {
 }
 
 function renderSeatCutPlayersTable() {
-    const tbody = document.getElementById('seatCutPlayersTableBody');
-    tbody.innerHTML = seatCutVisiblePlayers.map(p => {
+    const container = document.getElementById('seatCutPlayersContainer');
+    if (!container) return;
+    container.innerHTML = seatCutVisiblePlayers.map(p => {
         const sel = seatCutSelections[p];
         const hasCard = sel && sel.suit !== null;
-        let cardDisplay = '<span style="font-size:10px; opacity:0.5; font-style:italic;">None</span>';
+        let cardDisplay = '<span style="font-size:11px; opacity:0.5; font-style:italic;">None</span>';
         if (hasCard) {
             const isJoker = sel.suit === 'Joker';
             const colorClass = isJoker ? 'color:#f1c40f;' : (['♥', '♦'].includes(sel.suit) ? 'color:#e74c3c;' : 'color:#111111;');
@@ -1426,50 +1660,65 @@ function renderSeatCutPlayersTable() {
 
         const buttonsHtml = suits.map(suit => {
             const isSelected = sel && sel.suit === suit;
-            return `<button type="button" style="${getSuitBtnStyle(suit, isSelected)}" onclick="handleSeatCutSuitPress('${p.replace(/'/g, "\\'")}', '${suit}')">${suit === 'Joker' ? 'J' : suit}</button>`;
+            const displayLabel = suit === 'Joker' ? '🃏' : suit;
+            return `<button type="button" style="${getSuitBtnStyle(suit, isSelected)}" onclick="handleSeatCutSuitPress('${p.replace(/'/g, "\\'")}', '${suit}')">${displayLabel}</button>`;
         }).join('');
 
-        return `<tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
-            <td style="padding:10px; font-weight:bold; color:#fff; vertical-align:middle;">${p}</td>
-            <td style="padding:10px; text-align:center; vertical-align:middle;">
-                <div style="display:inline-flex; justify-content:center; align-items:center;">
+        let inlineKeypadHtml = '';
+        if (activeSeatCutKeypad && activeSeatCutKeypad.player === p) {
+            const currentSuit = activeSeatCutKeypad.suit;
+            const ranks = ['A', 'K', 'Q', 'J', '10', '9', '8', '7', '6', '5', '4', '3', '2'];
+            const isRed = ['♥', '♦'].includes(currentSuit);
+            const textColor = isRed ? '#e74c3c' : '#111111';
+            
+            const keypadButtonsHtml = ranks.map(rank => {
+                const btnStyle = `background:#ffffff; color:${textColor}; border:2px solid ${textColor}; cursor:pointer; padding:10px 0; font-size:14px; font-weight:900; border-radius:6px; box-shadow:0 2px 4px rgba(0,0,0,0.15); transition:transform 0.1s; display:flex; align-items:center; justify-content:center; gap:2px;`;
+                return `<button type="button" style="${btnStyle}" onclick="handleSeatCutRankSelection('${rank}')" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">${rank}${currentSuit}</button>`;
+            }).join('');
+
+            inlineKeypadHtml = `
+            <div style="background:rgba(0,0,0,0.4); border:1px solid rgba(255,255,255,0.1); padding:12px; border-radius:10px; margin-top:8px; animation:fadeIn 0.2s;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:5px;">
+                    <span style="font-size:11px; font-weight:bold; color:#2ecc71;">Select Rank for <strong style="color:#f39c12;">${p}</strong> with suit <strong style="color:#2ecc71;">${currentSuit}</strong></span>
+                    <button type="button" onclick="cancelCardValueSelection()" style="background:none; border:none; color:var(--danger); font-size:11px; cursor:pointer; text-decoration:underline;">Cancel</button>
+                </div>
+                <div style="display:grid; grid-template-columns:repeat(5, 1fr); gap:6px;">
+                    ${keypadButtonsHtml}
+                </div>
+            </div>`;
+        }
+
+        return `
+        <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); padding:15px; border-radius:12px; display:flex; flex-direction:column; gap:12px; margin-bottom:5px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:8px;">
+                <span style="font-size:15px; font-weight:800; color:#fff; letter-spacing:0.5px;">${p}</span>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span style="font-size:10px; color:#aaa; font-weight:bold; text-transform:uppercase;">Card:</span>
+                    ${cardDisplay}
+                </div>
+            </div>
+            <div style="display:flex; flex-direction:column; gap:6px;">
+                <span style="font-size:10px; color:#aaa; font-weight:bold; text-transform:uppercase; letter-spacing:0.5px;">Select Card Suit:</span>
+                <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center;">
                     ${buttonsHtml}
                 </div>
-            </td>
-            <td style="padding:10px; text-align:right; vertical-align:middle;">
-                ${cardDisplay}
-            </td>
-        </tr>`;
+            </div>
+            ${inlineKeypadHtml}
+        </div>`;
     }).join('');
 }
 
 function handleSeatCutSuitPress(player, suit) {
     if (suit === 'Joker') {
         seatCutSelections[player] = { player, suit: 'Joker', value: 'Joker', entryTime: Date.now() };
-        document.getElementById('seatCutKeypad').style.display = 'none';
         activeSeatCutKeypad = null;
         renderSeatCutPlayersTable();
         updateSeatCutCalculateButtonState();
     } else {
         seatCutSelections[player] = { player, suit: suit, value: null, entryTime: Date.now() };
+        activeSeatCutKeypad = { player, suit };
         renderSeatCutPlayersTable();
         updateSeatCutCalculateButtonState();
-        
-        activeSeatCutKeypad = { player, suit };
-        document.getElementById('seatCutKeypad').style.display = 'block';
-        document.getElementById('seatCutKeypadTitle').innerHTML = `Select Rank for <strong style="color:#f39c12;">${player}</strong> with suit <strong style="color:#2ecc71;">${suit}</strong>`;
-        
-        const ranks = ['A', 'K', 'Q', 'J', '10', '9', '8', '7', '6', '5', '4', '3', '2'];
-        const keypadContainer = document.getElementById('seatCutKeypadButtons');
-        
-        const isRed = ['♥', '♦'].includes(suit);
-        const textColor = isRed ? '#e74c3c' : '#111111';
-        
-        keypadContainer.innerHTML = ranks.map(rank => {
-            const btnStyle = `background:#ffffff; color:${textColor}; border:2px solid ${textColor}; cursor:pointer; padding:10px 0; font-size:14px; font-weight:900; border-radius:6px; box-shadow:0 2px 4px rgba(0,0,0,0.15); transition:transform 0.1s; display:flex; align-items:center; justify-content:center; gap:2px;`;
-                
-            return `<button type="button" style="${btnStyle}" onclick="handleSeatCutRankSelection('${rank}')" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">${rank}${suit}</button>`;
-        }).join('');
     }
 }
 
@@ -1478,7 +1727,6 @@ function handleSeatCutRankSelection(rank) {
     const { player, suit } = activeSeatCutKeypad;
     
     seatCutSelections[player] = { player, suit, value: rank, entryTime: Date.now() };
-    document.getElementById('seatCutKeypad').style.display = 'none';
     activeSeatCutKeypad = null;
     
     renderSeatCutPlayersTable();
@@ -1486,8 +1734,8 @@ function handleSeatCutRankSelection(rank) {
 }
 
 function cancelCardValueSelection() {
-    document.getElementById('seatCutKeypad').style.display = 'none';
     activeSeatCutKeypad = null;
+    renderSeatCutPlayersTable();
 }
 
 function updateSeatCutCalculateButtonState() {
@@ -1620,7 +1868,7 @@ async function calculateSeatCutResults() {
             return duplicateCards.includes(key);
         }).map(c => c.player);
         
-        alert(`⚠️ DUPLICATE DRAW DETECTED!\n\nThe card (${duplicateCards.join(', ')}) was drawn by multiple players: ${dupPlayers.join(', ')}.\n\nA Re-Seat Cut is required for these players. Their card parameters have been cleared. Please draw again for them.`);
+        alert("Duplicate values, repeating Seat cut");
         
         dupPlayers.forEach(p => {
             seatCutSelections[p] = { player: p, suit: null, value: null, entryTime: Date.now() };
@@ -2896,6 +3144,7 @@ function updateAdminSelect() {
     const pList = Array.from(document.querySelectorAll('#playerList select')).map(s => s.value).filter(v => v !== "");
     if (pList.length === 0) {
         wrapper.style.display = 'none';
+        validateNewGameFields();
         return;
     }
     
@@ -2913,6 +3162,7 @@ function updateAdminSelect() {
     } else {
         select.value = '';
     }
+    validateNewGameFields();
 }
 
 let currentEditingRoundNum = null;
@@ -3798,6 +4048,7 @@ function openMidGame() {
         return;
     }
     let avail = playersDb.filter(p => {
+        if (isExcludedPlayer(p.fullName)) return false;
         const name = p.fullName;
         const isCurrentlyIn = state.players.includes(name);
         const canRE = canPlayerReEnter(name, state);
@@ -3855,7 +4106,7 @@ async function confirmAddMidGame() {
 }
 
 function renderStats() {
-    let sortedPlayers = playersDb.map(p => {
+    let sortedPlayers = playersDb.filter(p => !isExcludedPlayer(p.fullName)).map(p => {
         const name = p.fullName;
         const games = savedGames.filter(g => g.winner && g.players.includes(name) && !g.isAborted && !g.isDeleted);
         const wins = games.filter(g => g.winner === name).length;
